@@ -1,251 +1,52 @@
-
-    
-HTML Source: https://eaglercraftminecraft.org/eaglercraft-minecraft.embed
-
-    
-1  <html lang="en"><head><title>Play Eaglercraft Minecraft Game Online !</title><meta charset="utf-8" /><meta name="robots" content="noindex, nofollow, noodp, noydir" /><meta name="viewport" content="width=device-width, maximum-scale=1.0, initial-scale=1.0, user-scalable=no, minimal-ui" /><meta http-equiv="X-UA-Compatible" content="requiresActiveX=true,IE=Edge,chrome=1" /><meta name="mobile-web-app-capable" content="yes" /><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><meta name="apple-mobile-web-app-title" content="Eaglercraft X"><meta http-equiv="Content-Language" content="en-US" /><meta property="og:type" content="game"><meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests"><style>* {
-2  margin: 0;
-3  padding: 0;
-4  box-sizing: border-box;
-5  font-family: "Helvetica Neue", "Calibri Light", Roboto, sans-serif;
-6  }
-7 
-8  html,
-9  body {
-10  width: 100%;
-11  height: 100%;
-12  background: #000;
-13  background-color: #000;
-14  }
-15 
-16  .overflow {
-17  overflow: hidden;
-18  }
-19 
-20  .game-page-loader {
-21  position: relative;
-22  display: flex;
-23  align-items: center;
-24  justify-content: center;
-25  flex: 1 1;
-26  width: 100%;
-27  height: 100%;
-28  background: #0a0a0a;
-29  border-radius: 20px 20px 0 0;
-30  }
-31 
-32  .page-loader {
-33  background: #000;
-34  bottom: 0;
-35  height: 100%;
-36  left: 0;
-37  position: absolute;
-38  right: 0;
-39  top: 0;
-40  width: 100%;
-41  z-index: 999
-42  }
-43 
-44  .page-loader-ball-container {
-45  left: 50%;
-46  margin-left: -40px;
-47  margin-top: -10px;
-48  position: absolute;
-49  text-align: center;
-50  top: 50%;
-51  width: 80px
-52  }
-53 
-54  .page-loader-ball-container .page-loader-ball-child {
-55  animation: loadThreeBounce 1.4s ease-in-out 0s infinite both;
-56  background-color: #fff;
-57  border-radius: 50%;
-58  display: inline-block;
-59  height: 20px;
-60  width: 20px
-61  }
-62 
-63  .page-loader-ball-container .page-loader-ball-0 {
-64  animation-delay: -.32s
-65  }
-66 
-67  .page-loader-ball-container .page-loader-ball-1 {
-68  animation-delay: -.16s
-69  }
-70 
-71  @keyframes loadThreeBounce {
-72 
-73  0%,
-74  80%,
-75  to {
-76  transform: scale(0)
-77  }
-78 
-79  40% {
-80  transform: scale(1)
-81  }
-82  }</style><style>.game-preloader {
-83  align-items: center;
-84  background: radial-gradient(#316883, #124056);
-85  background-color: #232333;
-86  box-sizing: border-box;
-87  color: #fff;
-88  display: flex;
-89  flex-direction: column;
-90  font-size: 16px;
-91  line-height: normal;
-92  height: 100%;
-93  justify-content: center;
-94  padding: 20px;
-95  text-align: center;
-96  width: 100%;
-97  }
-98 
-99  .game-preloader-image {
-100  margin-bottom: 25px;
-101  }
-102 
-103  .game-preloader-image .gameplayimg {
-104  border-radius: 10px;
-105  box-shadow: 0 0 12px rgb(0 0 0 / 30%);
-106  }
-107 
-108  .fss74:hover {
-109  transform: scale(1.1);
-110  transition-timing-function: cubic-bezier(0.47, 2.02, 0.31, -0.36);
-111  }
-112 
-113  .fss74 {
-114  color: #3C1E6E;
-115  cursor: pointer;
-116  display: flex;
-117  padding: 13px 24px 13px 24px;
-118  position: relative;
-119  transform: perspective(1px) translateZ(0);
-120  align-items: center;
-121  font-family: 'Fredoka One', sans-serif;
-122  border-radius: 100px;
-123  text-transform: capitalize;
-124  justify-content: center;
-125  background-color: #35FDFF;
-126  transition-duration: 0.2s;
-127  font-size: 21px;
-128  border: none;
-129  }
-130 
-131  .MuiSvgIcon-root {
-132  fill: currentColor;
-133  width: 1em;
-134  height: 1em;
-135  display: inline-block;
-136  transition: fill 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
-137  flex-shrink: 0;
-138  user-select: none;
-139  }
-140 
-141  .fss73 {
-142  animation: fss72 1.6s linear infinite;
-143  font-size: 1.3em;
-144  margin-left: 4px;
-145  margin-right: -4px;
-146  animation-delay: 0.2s;
-147  background-size: contain;
-148  }
-149 
-150  @keyframes fss72 {
-151  0% {
-152  opacity: 1;
-153  transform: translateX(0px) scale(1);
-154  }
-155 
-156  25% {
-157  opacity: 0;
-158  transform: translateX(10px) scale(0.9);
-159  }
-160 
-161  26% {
-162  opacity: 0;
-163  transform: translateX(-10px) scale(0.9);
-164  }
-165 
-166  55% {
-167  opacity: 1;
-168  transform: translateX(0px) scale(1);
-169  }
-170  }
-171 
-172  .game-preloader-website-name {
-173  background: linear-gradient(to right, rgba(30, 87, 153, 0) 0, rgba(0, 0, 0, .3) 50%, rgba(125, 185, 232, 0) 100%);
-174  margin-top: 40px;
-175  padding: 10px;
-176  text-align: center;
-177  color: white;
-178  opacity: 0.5;
-179  letter-spacing: 7px;
-180  text-transform: uppercase;
-181  font-size: 0.8571428571428571rem;
-182  font-family: Montserrat, Arial, "Helvetica Neue", Helvetica, sans-serif;
-183  font-weight: 400;
-184  line-height: 1.66;
-185  }
-186 
-187  /* hide_footer: 38px - 45px */
-188  body.hide_footer {
-189  height: calc(100% + 41px) !important;
-190  overflow: hidden !important;
-191  }
-192 </style></head><body class="overflow"><div class="game-page-loader" id="game-page-loader"><div class="page-loader"><div class="page-loader-ball-container"><div class="page-loader-ball-child page-loader-ball-0"></div><div class="page-loader-ball-child page-loader-ball-1"></div><div class="page-loader-ball-child page-loader-ball-2"></div></div></div></div><div id="preloading-game" class="game-preloader"><div class="game-preloader-image" onclick="if (!window.__cfRLUnblockHandlers) return false; startGame()" data-cf-modified-d8d1fe1da6289978aa774565-=""><img src="/cache/data/image/game/eaglercraft-minecraft-m200x150.png" width="200" height="150" class="gameplayimg" title="Eaglercraft Minecraft " alt="Eaglercraft Minecraft img"></div><div class="MuiGrid-root fss18 MuiGrid-item" onclick="if (!window.__cfRLUnblockHandlers) return false; start_game_frame()" data-cf-modified-d8d1fe1da6289978aa774565-=""><button class="fss74" aria-label="play game">Play Now<svg class="MuiSvgIcon-root fss73" focusable="false" viewBox="0 0 24 24" aria-hidden="true"><path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"></path></svg></button></div><div class="game-preloader-website-name">&nbsp;Eaglercraft Minecraft &nbsp;</div></div><script type="d8d1fe1da6289978aa774565-text/javascript">let game_type = "IN_GAME";
-193  let url_game = "https://eaglercraftminecraft.org/game/eaglercraft/";
-194  let check_load_now = "";
-195  let check_referrer = "";
-196 
-197  setTimeout(() => {
-198  if (document.getElementById("game-page-loader")) {
-199  document.getElementById("game-page-loader").remove();
-200  if (document.querySelector('body').className == "overflow") {
-201  document.querySelector('body').classList.remove('overflow');
-202  }
-203  }
-204  }, 330); // 1000 == (1s)
-205 
-206  document.addEventListener('DOMContentLoaded', function() {
-207  if ((game_type != 'EXTERNAL' && check_load_now) || game_type == 'IFRAME_HTML') {
-208  start_game_frame();
-209  }
-210  })
-211 
-212  // render tag iframe
-213  function start_game_frame() {
-214  let frame_game = document.createElement('iframe');
-215  frame_game.setAttribute('id', 'iframehtml5');
-216  frame_game.setAttribute('width', '100%');
-217  frame_game.setAttribute('height', '100%');
-218  frame_game.setAttribute('frameborder', '0');
-219  frame_game.setAttribute('border', '0');
-220  frame_game.setAttribute('scrolling', 'auto');
-221  frame_game.setAttribute('class', 'iframe-default');
-222  frame_game.setAttribute('allowfullscreen', 'true');
-223  frame_game.setAttribute('src', url_game);
-224  frame_game.setAttribute('title', "Eaglercraft Minecraft ");
-225  frame_game.setAttribute('sandbox', 'allow-forms allow-modals allow-same-origin allow-scripts allow-pointer-lock');
-226  if (check_referrer) {
-227  frame_game.setAttribute('referrerPolicy', 'no-referrer');
-228  }
-229  document.body.append(frame_game);
-230 
-231  if (game_type === 'HIDE_FOOTER') {
-232  document.querySelector('body').className = "hide_footer";
-233  }
-234  if (document.getElementById("preloading-game")) {
-235  document.getElementById("preloading-game").remove();
-236  }
-237  }
-238 
-239  // open url: external
-240  function openInNewWindow() {
-241  let height2 = window.innerHeight || 600;
-242  let width2 = window.innerWidth || 600;
-243  window.open(url_game, "", "width=" + width2 + ",height=" + height2);
-244  }</script><script src="/cdn-cgi/scripts/7d0fa10a/cloudflare-static/rocket-loader.min.js" data-cf-settings="d8d1fe1da6289978aa774565-|49" defer></script><script defer src="https://static.cloudflareinsights.com/beacon.min.js/vcd15cbe7772f49c399c6a5babf22c1241717689176015" integrity="sha512-ZpsOmlRQV6y907TI0dKBHq9Md29nnaEIPlkf84rnaERnq6zvWvPUqr2ft8M1aS28oN72PdrCzSjY4U6VaAw1EQ==" data-cf-beacon='{"version":"2024.11.0","token":"3adccb085119462ab09600f8a34ef8a9","r":1,"server_timing":{"name":{"cfCacheStatus":true,"cfEdge":true,"cfExtPri":true,"cfL4":true,"cfOrigin":true,"cfSpeedBrain":true},"location_startswith":null}}' crossorigin="anonymous"></script>
-245 </body></html>
-
+<!DOCTYPE html>
+<html style="width:100%;height:100%;background-color:black;">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0" />
+		<meta name="description" content="Play minecraft 1.12 in your browser" />
+		<meta name="keywords" content="eaglercraft, minecraft, 1.12, 1.12.2" />
+		<title>EaglercraftX 1.12 WASM-GC</title>
+		<meta property="og:locale" content="en-US" />
+		<meta property="og:type" content="website" />
+		<meta property="og:title" content="Eaglercraft 1.12 WASM" />
+		<meta property="og:description" content="Play minecraft 1.12 in your browser" />
+		<meta property="og:image" content="favicon.png" />
+		<link type="image/png" rel="shortcut icon" href="favicon.png" />
+		<script type="text/javascript" src="bootstrap.js"></script>
+		<script type="text/javascript">
+			"use strict";
+			window.addEventListener("load", function() {
+				if(window.location.href.indexOf("file:") === 0) {
+					alert("HTTP please, do not open this file locally, run a local HTTP server and load it via HTTP");
+				}else {
+					
+					// %%%%%%%%% launch options %%%%%%%%%%%%
+					
+					var relayId = Math.floor(Math.random() * 3);
+					window.eaglercraftXOpts = {
+						demoMode: false,
+						container: "game_frame",
+						assetsURI: "assets.epw",
+						worldsDB: "worlds",
+						servers: [
+							{ addr: "wss://craft.slaysisters.website", name: "WegCraft" }
+    						]
+					};
+					
+					// %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+					
+					var q = window.location.search;
+					if((typeof q === "string") && q[0] === "?" && (typeof window.URLSearchParams !== "undefined")) {
+						q = new window.URLSearchParams(q);
+						var s = q.get("server");
+						if(s) window.eaglercraftXOpts.joinServer = s;
+					}
+					
+					main();
+					
+				}
+			});
+		</script>
+	</head>
+	<body style="margin:0px;width:100%;height:100%;overflow:hidden;background-color:black;" id="game_frame"></body>
+</html>
